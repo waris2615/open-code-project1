@@ -129,6 +129,17 @@ body {
     pointer-events: none;
 }
 
+.hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920&h=1080&fit=crop') center/cover;
+    opacity: 0.03;
+    z-index: 0;
+}
+
 .hero .container {
     max-width: 1400px;
     margin: 0 auto;
@@ -311,6 +322,86 @@ body {
 
 .section-header p {
     color: var(--text-muted);
+}
+
+.clients {
+    padding: 4rem 2rem;
+    background: var(--gray);
+    text-align: center;
+}
+
+.clients p {
+    color: var(--text-muted);
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.clients-grid {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.client-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: var(--text-muted);
+    font-size: 1.25rem;
+    font-weight: 600;
+    opacity: 0.6;
+    transition: opacity 0.3s;
+}
+
+.client-logo:hover {
+    opacity: 1;
+}
+
+.client-logo i {
+    font-size: 2rem;
+}
+
+.cta {
+    padding: 6rem 2rem;
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.15), rgba(236, 72, 153, 0.1));
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.cta::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('https://images.unsplash.com/photo-1557683316-973673bdar25?w=1920&h=400&fit=crop') center/cover;
+    opacity: 0.05;
+}
+
+.cta-content {
+    position: relative;
+    z-index: 1;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.cta h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.cta p {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
 }
 
 .services {
@@ -664,6 +755,23 @@ body {
 .contact {
     padding: 6rem 2rem;
     background: var(--darker);
+    position: relative;
+}
+
+.contact::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?w=1920&h=1080&fit=crop') center/cover;
+    opacity: 0.03;
+}
+
+.contact-container {
+    position: relative;
+    z-index: 1;
 }
 
 .contact-container {
