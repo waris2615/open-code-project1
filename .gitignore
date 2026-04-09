@@ -1,0 +1,19 @@
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# API Keys & Secrets
+*.pem
+*.key
+credentials.json
+
+# MCP Config (contains API keys)
+.mcp.json
+
+# Dependencies
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
